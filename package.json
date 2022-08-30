@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Craken420/RK_Practice/issues"
   },
-  "homepage": "https://github.com/Craken420/RK_Practice#readme"
+  "homepage": "https://github.com/Craken420/RK_Practice#readme",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
 }

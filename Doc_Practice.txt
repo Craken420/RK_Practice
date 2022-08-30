@@ -3,7 +3,12 @@
     Install NodeJs
     Execute Visual Code with admin permisions
         Open console in the proyect folder
-        Add package file with the command
-            npm init
-                Add name, repository y author
-
+        npm init
+            Add package file with the command   
+        Add name, repository y author
+        npm i http
+            HTTP: "HyperText Transfer Protocol" of the "Word Wild Web" (WWW)
+                Helps to communicate the PC with syntax and semantics
+                acording with the web arquitecture: server, client and proxies
+        Add the server content in a server.js file
+        Run server with command: node server.js
