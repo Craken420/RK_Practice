@@ -1,7 +1,10 @@
-const http = require('http')
-
+const http = require('http'),
+    express = require('express'),
+    app = express()
+    
 //create a server object:
-http.createServer().listen(function (req, res) {
-    res.write('Server is running on http://localhost:8080'); //write a response to the client
-    res.end(); //end the response
-}, 8080); //the server object listens on port 8080
+const server = http.createServer(app)
+
+server.listen(8080, function (req, res) {
+    console.log('Server is running on http://localhost:8080'); //write a response to the client
+}); //the server object listens on port 8080
