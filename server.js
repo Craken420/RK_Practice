@@ -1,6 +1,5 @@
 //modules
-const http = require('http'),
-    cors = require('cors'),
+const cors = require('cors'),
     express = require('express'),
     logger = require('morgan'),
 
@@ -13,9 +12,7 @@ app.use(cors()) //indicate any origins (domain, scheme, or port) to load resourc
 app.use(express.json()) //parse the incoming requests with JSON
 app.use(logger('dev')) //Log the time and status of the response
 
-//create a server object:
-const server = http.createServer(app)
-
-server.listen(8080, function (req, res) {
+//create a server object
+app.listen(8080, function (req, res) {
     console.log('Server is running on http://localhost:8080'); //write a response to the client
 }); //run server on port 8080
