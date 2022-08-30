@@ -15,6 +15,11 @@ app.use(logger('dev')) //Log the time and status of the response
 //settings values
 app.set('PORT', 8080)
 
+//path's
+app.get('/', function (req, res){
+    res.send('Welcome to the \'TODO List\' application practice')
+})
+
 //create a server object
 app.listen(app.get('PORT'), function (req, res) {
     console.log(`Server is running on http://localhost:${app.get('PORT')}`); //write a response to the client
