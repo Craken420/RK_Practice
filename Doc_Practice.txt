@@ -1,0 +1,9 @@
+
+"Starting"
+    Install NodeJs
+    Execute Visual Code with admin permisions
+        Open console in the proyect folder
+        Add package file with the command
+            npm init
+                Add name, repository y author
+

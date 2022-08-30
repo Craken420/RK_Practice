@@ -1,0 +1,19 @@
+{
+  "name": "rk_practice",
+  "version": "1.0.0",
+  "description": "STACK Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Craken420/RK_Practice.git"
+  },
+  "author": "Luis Angel Peña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Craken420/RK_Practice/issues"
+  },
+  "homepage": "https://github.com/Craken420/RK_Practice#readme"
+}
