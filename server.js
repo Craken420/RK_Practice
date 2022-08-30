@@ -16,8 +16,8 @@ app.use(logger('dev')) //Log the time and status of the response
 app.set('PORT', 8080)
 
 //path's
-app.get('/', function (req, res){
-    res.send('Welcome to the \'TODO List\' application practice')
+app.get('/', function (req, res) {
+    res.send('<h1>Welcome to the \'TODO List\' application</h1>')
 })
 
 //create a server object
