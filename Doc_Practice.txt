@@ -30,3 +30,5 @@
             that the server will permit the actual request. In that preflight,
             the browser sends headers that indicate the HTTP method and headers
             that will be used in the actual request.
+        npm i path
+            To work with path's files and directory's

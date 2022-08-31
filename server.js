@@ -2,6 +2,7 @@
 const cors = require('cors'),
     express = require('express'),
     logger = require('morgan'),
+    path = require('path')
 
 // activate the modules
     app = express()
@@ -16,8 +17,8 @@ app.use(logger('dev')) //Log the time and status of the response
 app.set('PORT', 8080)
 
 //path's
-app.get('/', function (req, res) {
-    res.send('<h1>Welcome to the \'TODO List\' application</h1>')
+app.get('/', function (req, res){
+    res.sendFile(path.join(__dirname + '/index.html'))
 })
 
 //create a server object
