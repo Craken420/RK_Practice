@@ -16,9 +16,11 @@ app.use(logger('dev')) //Log the time and status of the response
 //settings values
 app.set('PORT', 8080)
 
+app.use(express.static('public'));
+
 //path's
 app.get('/', function (req, res){
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.sendFile('index.html')
 })
 
 //create a server object
