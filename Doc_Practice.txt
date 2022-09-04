@@ -32,3 +32,21 @@
             that will be used in the actual request.
         npm i path
             To work with path's files and directory's
+        Use the routing
+            Routing methods: derived from those used by HTTP (GET, POST, etc.)
+                URLs: route paths
+                Regular expressions: '?', '+', '*', '()', '.', '-'
+                Character escape '[$]'
+
+                Response methods:
+                res.download() Returns file to be downloaded.
+                res.end() Ends the response process.
+                res.json() Returns JSON.
+                res.jsonp() Returns JSON that supports JSONP.
+                res.redirect() Redirects the request.
+                res.render() Renders a page template.
+                res.send() Returns a response that can be of various types.
+                res.sendFile() Sends a file as an octet stream.
+                res.sendStatus() Formats the response status and sends it in the response body.
+                router.all('*', requireAuthentication, loadUser)
+    

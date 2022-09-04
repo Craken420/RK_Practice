@@ -6,6 +6,7 @@ const cors = require('cors'),
 
 // activate the modules
     app = express()
+    router = require('express').Router(); // export routs used as middleware
 
 //middleware
 app.use(express.urlencoded({ extended: true}))  //parse URL body
@@ -19,9 +20,11 @@ app.set('PORT', 8080)
 app.use(express.static('public'));
 
 //path's
-app.get('/', function (req, res){
-    res.sendFile('index.html')
+router.route('/').get(function (req, res){
+    res.sendFile(path.join(__dirname + '/index.html'))
 })
+
+app.use('/', router)
 
 //create a server object
 app.listen(app.get('PORT'), function (req, res) {
