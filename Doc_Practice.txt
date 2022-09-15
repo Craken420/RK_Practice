@@ -49,4 +49,5 @@
                 res.sendFile() Sends a file as an octet stream.
                 res.sendStatus() Formats the response status and sends it in the response body.
                 router.all('*', requireAuthentication, loadUser)
-    
+        npm i http-errors
+            Create HTTP errors for Express, Koa, Connect, etc. with ease.
